@@ -1,32 +1,31 @@
 <p align="center">
-  <strong>JOURNAL</strong>
-  </br><i>new paper for new democraty</i>
+  <strong>DEMOCRATIE</strong>
+  </br><i>for participatory democraty</i>
 </p>
 
 ----------------------------------------------
 ---------------------------------------------
-[new paper for new democraty](https://ibb.co/Qn1TcHm)
 -----------------------------------------------
 ----------------------------------------------
 
-- tu peux rassembler
-- tu peux informer
-- tu peux réagir
-- ET TU PEUX REVENDIQUER
+- tu peux proposer de nouvelle loi
+- tu peux amender les propositions de loi
+- tu peux t'informer sur les demandes des citoyens
+- ET BIENTÔT TU POURRAS VOTER !
 
-(plus il y a de réaction sur une information ou une revendication plus le sujet a de chance d'être pris en compte par les citoyens)
+(pour l'instant, plus il y a d'amendements sous une loi plus le sujet a de chance d'être pris en compte par les citoyens)
 
 ```
-- you can gathering
-- you can informe
-- you can react
-- AND YOU CAN CLAIM
+- you can propose new law
+- you can amend law proposition
+- you can informe you of citizen's asks
+- AND VOTE SOON !
 
-(more react for 1 information or revendication, more lucky for changement ;)
+(for moment, more amends for 1 law, more lucky for changement ;)
 
-***journal in english soon if i need and if you need!!!
+***democratie's website can to be traduce for your contry if you need!!!
 ``` 
 
-[http://journal.bylaurie.fr](http://journal.bylaurie.fr)
+[http://democratie.bylaurie.fr](http://democratie.bylaurie.fr)
 
 
