@@ -9,7 +9,7 @@ class ReactionsController < ApplicationController
 
     if @reaction.save
       flash[:sucess] = "merci pour ton avis, ça fait réfléchir!"
-      redirect_back fallback_location: root_path
+      redirect_to @reaction.information
     else
       flash[:alert] = @reaction.errors_to_sentence
       redirect_back fallback_location: root_path

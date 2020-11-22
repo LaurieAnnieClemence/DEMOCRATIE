@@ -1,18 +1,45 @@
 .title
   .title-content
-    = "À la Une"
+    = "Débat du moment"
 
-.tops
-  .tops-title
-  .tops-content
-    - @informations.each do |information|
-      .tops-content-description
-        = link_to ". #{information.content}", information_path(information.id)
+
+
+
+- @informations.each do |information|
+  .show
+    .show-content
+      = information.content
+
+  .index
+    - if reactions = Reaction.where(information_id: information.id)
+      - reactions.each do |reaction|
+        .index-content
+          .index-content-middle
+            = reaction.content
+          .index-content-bottom
+            = reaction.author
+
+    .index-content
+      = form_for Reaction.new do |f|
+        .index-content-middle-new
+          = f.label "proposer d'améliorer cette loi:"
+          = f.text_area :content
+          br
+          = f.label "vos initiales comme signature numérique:"
+          = f.text_field :author
+          = f.hidden_field :information_id, :value => information.id
+        .index-content-bottom-new
+          = f.submit "amender cette loi"
+
+
+
+
+
 
 .index
-  .index-title
-    = "Rencontres prévues"
   - @gatherings.each do |gathering|
+    .index-title
+      = "Rencontres prévues"
     .index-content
       .index-content-date
         = gathering.date
@@ -26,13 +53,14 @@
 .more
   = form_for Subscriber.new do |f|
     .more-content
-      = f.label "liste d'attente pour reçevoir le journal directement dans ta boîte mail 1 fois par mois!"
+      = f.label "liste d'attente pour rester au courant de l'actualité des nouvelles propositions 1 fois par mois!"
       br
       = f.text_field :email, placeholder: "ton adresse mail"
       br
       = f.submit "s'inscrire"
 
   .more-content
-    = "Rédacteur"
+    = "Si tu veux améliorer le site:"
     .more-content-detail
-      = "Si vous aussi, vous voulez ouvrir votre propre journal, merci de contacter: Laurie.Annie.Clemence@gmail.com"
+      = "Laurie.Annie.Clemence@gmail.com"
+    = "envoie moi ta proposition par mail ;)"

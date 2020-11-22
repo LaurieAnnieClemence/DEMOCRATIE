@@ -13,7 +13,7 @@ class InformationsController < ApplicationController
 
     if @information.save
       flash[:sucess] = "merci pour l'info!"
-      redirect_to @information, notice: "merci pour l'info!"
+      redirect_to @information, notice: "merci citoyen ;)!"
     else
       flash[:alert] = @information.errors_to_sentence
       redirect_to root_url

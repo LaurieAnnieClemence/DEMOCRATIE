@@ -1,12 +1,12 @@
 .title
   .title-content
-    = "Ça s'discute..."
+    = "Amendements"
 
 .show
   .show-content
     = @information.content
   .show-button
-    = link_to "réagis", information_path(@information.id)
+    = link_to "amender", information_path(@information.id)
 
 .index
   - @reactions.each do |reaction|
@@ -16,4 +16,4 @@
       .index-content-middle
         = reaction.content
       .index-content-bottom
-        = link_to "réagis", information_path(reaction.information_id)
+        = link_to "amender de nouveau", information_path(reaction.information_id)

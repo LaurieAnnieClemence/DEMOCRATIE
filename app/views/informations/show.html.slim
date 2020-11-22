@@ -1,6 +1,7 @@
 .title
   .title-content
-    = "Ça s'discute, ça s'discute..."
+    = "Loi " 
+    = @information.id
 
 .show
   .show-content
@@ -18,11 +19,11 @@
   .index-content
     = form_for Reaction.new do |f|
       .index-content-middle-new
-        = f.label "réaction:"
+        = f.label "Votre proposition pour améliorer cette loi:"
         = f.text_area :content
         br
         = f.label "vos initiales comme signature numérique:"
         = f.text_field :author
         = f.hidden_field :information_id, :value => @information.id
       .index-content-bottom-new
-        = f.submit "diffuser ma réaction"
+        = f.submit "amender cette loi"

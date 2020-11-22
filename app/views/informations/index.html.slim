@@ -1,17 +1,17 @@
 .title
   .title-content
-    = "L'actu c'est ici !"
+    = "Propositions de lois!"
 
 .new
   .new-content
     = form_for @information, url: {action: "create"}, html: {class: "nifty_form"} do |f|
       .new-content-label
-        = f.label "information:"
+        = f.label "loi:"
       .new-content-field
         = f.text_area :content
       .new-content-tag
         = f.submit "   "
-        = "je souhaite diffuser cet info"
+        = "proposer"
 
 .index
   - @informations.each do |information|
@@ -19,4 +19,4 @@
       .index-content-middle
         = information.content
       .index-content-bottom
-        = link_to "réagis", information_path(information.id)
+        = link_to "amender", information_path(information.id)
