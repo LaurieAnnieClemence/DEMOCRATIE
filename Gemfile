@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '3.0.0'
 
 gem 'rails'
 gem 'pg'
@@ -23,6 +23,12 @@ group :development do
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+
+  gem "capistrano", require: false
+  gem "capistrano3-puma", "4.0.0", require: false
+  gem "capistrano-rails", require: false
+  gem "capistrano-rbenv", require: false
+  gem "capistrano-rails-console", require: false
 end
 
 group :test do
