@@ -66,6 +66,7 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
+    bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
     bootsnap (1.6.0)
       msgpack (~> 1.0)
@@ -112,6 +113,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    ed25519 (1.2.4)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.14.2)
@@ -247,6 +249,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt_pbkdf
   bootsnap
   byebug
   capistrano
@@ -257,6 +260,7 @@ DEPENDENCIES
   capybara
   chromedriver-helper
   coffee-rails
+  ed25519
   jbuilder
   listen
   pg

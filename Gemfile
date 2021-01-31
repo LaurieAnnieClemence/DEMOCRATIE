@@ -29,6 +29,8 @@ group :development do
   gem "capistrano-rails", require: false
   gem "capistrano-rbenv", require: false
   gem "capistrano-rails-console", require: false
+  gem "ed25519", require: false
+  gem "bcrypt_pbkdf", require: false
 end
 
 group :test do
