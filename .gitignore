@@ -28,3 +28,7 @@
 
 # Ignore .DS_Store
 .DS_Store
+
+.env
+
+config/deploy/production.rb
